@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to landing page</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            background-color: #333;
+            padding: 17px;
+        }
+        nav h1 {
+            font-size: 32px;
+            margin: 0;
+            padding: 0;
+            font-size: 45px;
+            border-bottom: 5px solid red;
+            border-radius: 30px;
+            color: red;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+        }
+        ul li {
+            margin-left: 20px;
+            
+        }
+        ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            border-radius: 6px;
+        }
+        ul li a:hover {
+            background-color: aqua;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+        }
+        input {
+            padding: 10px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .login {
+            background-color: #ff6600;
+            border: none;
+            border-radius: 30px;
+            color: white;
+            margin-left: 10px;
+            width: 70px;
+        }
+        .login:hover {
+            background-color: aqua;
+        }
+        .signup {
+            background-color: #ff6600;
+            border: none;
+            border-radius: 23px;
+            color: white;
+            margin-left: 10px;
+            width: 70px;
+        }
+        .signup:hover {
+            background-color: aqua;
+        }
+        .main-div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+        }
+        .main-div .head {
+            font-size: 30px;
+            margin-bottom: 30px;
+            font-family: sans-serif;
+            margin-left: 90px;
+            margin-top: 50;
+        }
+        .main-div .head p {
+            font-size: 18px;
+            line-height: 2pc;
+            margin-top: 0px;
+            font-family: sans-serif;
+            margin-left: 15px;
+        }
+        .order-btn {
+            display: inline-block;
+            background-color: red;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            font-size: 20px;
+            border-radius: 30px;
+            margin-top: 20px;
+            margin-left: 30px;
+            width: 100px;
+            transition: background-color 0.4s;
+        }
+        .order-btn:hover {
+            background-color: aqua;
+        }
+        .img img {
+            width: 650px;
+            height: 500px;
+            border-radius: 10px;
+            margin-top: 50px;
+            margin-right: 20px;
+        }
+
+        /* Menu Page Styles */
+        body.menu-page {
+            background: linear-gradient(to bottom, white 100%, black 100%);
+            margin: 0;
+            padding: 0;
+            height: 120vh;
+        }
+        h2 {
+            text-align: center;
+            padding: 10px;
+            font-size: 40px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #ff6600;
+            margin-bottom: 0;
+        }
+        .Menu {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 10px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .category {
+            text-align: center;
+            width: 200px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .category img {
+            width: 100%;
+            height:200px;
+            border-radius: 10px;
+            margin-bottom: 9px;
+            
+        }
+         .category h3 {
+            font-size: 30px;
+            margin: 10px;
+        }
+         .category p {
+            margin:0;
+            font-size: 20px;
+        }
+        .category  h4 {
+            font-size: 30px;
+            margin: 10px;
+        }
+         .category p {
+            margin:0;
+            font-size: 20px;
+        }
+        .category h5{
+            font-size: 30px;
+            margin: 10px;
+        }
+        .category p {
+            margin:0;
+            font-size: 20px;
+        }
+        .category h6 {
+            margin:10px;
+            font-size: 30px;
+        }
+        .category p {
+            margin:0;
+            font-size: 20px;
+        }
+                 /* Footer styles */
+                 footer {
+            background-color: #333;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .contact {
+            margin-bottom: 25px;
+        }
+
+        .contact h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .contact p {
+            margin: 9px ;
+            font-size: 17px;
+        }
+        
+
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .footer-nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-nav li {
+            display: inline-block;
+            margin:  10px;
+        }
+
+        .footer-nav a {
+            color: white;
+            text-decoration: none;
+        }
+        </style>
+</head>
+<body>
+    <nav>
+        <h1>Zomato</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+        <div>
+            <input class="login" type="submit" value="Login" name="login">
+            <input class="signup" type="submit" value="Sign Up" name="sign Up">
+        </div>
+    </nav>
+    <div class="main-div">
+        <div class="head">
+            <h1>Order Your Best<br>Food Anytime</h1>
+            <p>Hey,Our delicious food is waiting for you,<br>
+            we are always near to you with fresh item of  food</p>
+            <a href="#" class="order-btn">Order Now</a>  
+        </div>
+        <div class="img">
+            <img src="https://static3.depositphotos.com/1007195/222/i/950/depositphotos_2226067-stock-photo-thai-curry-chicken.jpg" alt="">
+        </div>
+    </div>
+ <!-- Menu Page Content -->
+    <body class="menu-page">
+        <h2>Popular Dishes</h2>
+        <div class="Menu">
+            <div class="category">
+                <img src="https://burrataandbubbles.com/wp-content/uploads/2022/06/smoked-burgers.jpg" alt="Burger">
+                <h3>Burger</h3>
+                <p class="category-text">Burger King, McDonald's, Burger Place +3</p>
+            </div>
+            <div class="category">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Ice_cream_with_whipped_cream%2C_chocolate_syrup%2C_and_a_wafer_%28cropped%29.jpg" alt="Ice Cream">
+                <h4>Ice-Cream</h4>
+                <p>Baskin Robbins, Ibaco +3</p>
+            </div>
+            <div class="category">
+                <img src="https://cdn.britannica.com/08/177308-050-94D9D6BE/Food-Pizza-Basil-Tomato.jpg" alt="Pizza">
+           <h5>Pizza</h5>
+           <p>Pizza Hut, Domino's Pizza +3</p>
+            </div>
+            <div class="category">
+        <img src="https://www.corriecooks.com/wp-content/uploads/2021/05/french-fries-instant-pot.jpg" alt="French Fries">
+       <h6>French Fries</h6>
+       <p>French Fries Instant Pot</p>
+            </div>
+        </div>
+    </body>
+     </html>
+    <!-- Footer -->
+    <footer>
+        <div class="contact">
+            <h1>Contact</h1>
+            <p>Email: Zom123@zomato.com</p>
+            <p>Phone: +91 8389570268</p>
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Security</a></li>
+            </ul>
+        </div>
+    </footer>
+</html>
